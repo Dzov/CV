@@ -1,12 +1,11 @@
 
 main {
-  width: 70%;
-  margin: 0 auto;
+  padding: 0 150px;
 }
 
-img {
+/*img {
   width: 90px;
-}
+}*/
 
 section {
   flex-wrap: wrap;
@@ -82,19 +81,27 @@ aside {
 
 @media (max-width: 700px) {
   main {
-    width: 90%;
+    padding: 0 20px;
   }
 
   aside {
     margin-top: 20px;
   }
-  
+
   article {
-    margin: 0 5px;
+    width: 33%; 
+  }
+
+  .fa-star {
+    font-size: 15px;
   }
 
   footer {
     position: static;
+  }
+
+  section {
+    flex-direction: column;
   }
 }
 
