@@ -86,7 +86,7 @@ footer {
     margin: auto; 
   }
   main {
-    height: 100%;
+    height: auto;
   }
   footer {
     position: static;

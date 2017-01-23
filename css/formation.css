@@ -132,9 +132,22 @@ footer {
 
 #simplonLogo:hover {
   animation: none;
-  
+
 }
 
+
+@media (max-width: 700px) {
+  footer {
+    position: absolute;
+    bottom: 0; 
+  }
+  p {
+    font-size: 10px;
+  }
+  article {
+    margin-top: -30px;
+  }
+}
 
 
 
