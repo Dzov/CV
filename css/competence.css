@@ -3,9 +3,9 @@ main {
   padding: 0 150px;
 }
 
-/*img {
+img {
   width: 90px;
-}*/
+}
 
 section {
   flex-wrap: wrap;
@@ -29,6 +29,10 @@ h4 {
   font-size: 20px;
 }
 
+article {
+  width: 33%;
+}
+
 .stars {
   justify-content: center; 
 }
@@ -41,10 +45,10 @@ h4 {
   font-size: 20px;
 }
 
-footer {
+/*footer {
   position: absolute;
   bottom: 0;
-}
+}*/
 
 
 /**************** **************** **************** **************** **************** **************** **************** ****************/
@@ -98,6 +102,7 @@ aside {
 
   footer {
     position: static;
+    margin-top: 10px;
   }
 
   section {
