@@ -1,2 +1,0 @@
-var simpIcon = getElementById("simplonLogo"); 
-
