@@ -1,12 +1,12 @@
 main {
-  width: 70%;
-  margin: 0 auto;
-  height: 100%;
+  height: calc(100% - 232px);
+  justify-content: center; 
 }
 
 #loisirs {
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center; 
+  justify-content: center; 
   padding: 40px;
 }
 
@@ -15,17 +15,27 @@ main {
 }
 
 .loisirItem img {
-  border: 4px solid green;
-  height: 150px;
-  width: 150px;
+  padding: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0; 
 }
 
 /**************** **************** **************** **************** **************** **************** **************** ****************/
   /**************** **************** **************** ------ ANIMATIONS ------ **************** **************** ****************/
 /**************** **************** **************** **************** **************** **************** **************** ****************/
 
-.loisirItem img {
-  animation: border 4s both;
+.n1 img, .n3 img, .n5 img {
+  animation: topImg 2s both;
+  position: relative;
+}
+
+.n2 img, .n4 img, .n6 img {
+  animation: bottomImg 2s both;
+  position: relative;
+  /*animation-delay: .3s; */
 }
 
 .n2 img{
@@ -49,30 +59,21 @@ main {
 }
 
 
-footer {
-  position: absolute;
-  bottom: 0; 
-}
-
-
-/**************** **************** **************** **************** **************** **************** **************** ****************/
-  /**************** **************** **************** ------ANIMATIONS------ **************** **************** ****************/
-/**************** **************** **************** **************** **************** **************** **************** ****************/
-
-@keyframes border {
+@keyframes topImg{
   from {
-      border-radius: 0;
-      opacity: 0
-  }
-  50% {
-      opacity: 40%;
-  }
-  75% {
-      opacity: 75%; 
+    bottom: 1000px;
   }
   to {
-      border-radius: 100%;
-      opacity: 100%; 
+    bottom: 0;
+  }
+}
+
+@keyframes bottomImg {
+  from {
+    top: 1000px;
+  }
+  to {
+    top: 0;
   }
 }
 
@@ -82,11 +83,8 @@ footer {
 
 
 @media (max-width: 700px) {
-  .loisirItem {
-    margin: auto; 
-  }
   main {
-    height: auto;
+    height: 100%;
   }
   footer {
     position: static;
@@ -94,6 +92,42 @@ footer {
 }
 
 
+@media (max-width: 1245px) {
+  .loisirItem img {
+  animation: border 3s both;
+}
+
+.n2 img{
+  animation-delay: .2s;
+}
+
+.n3 img{
+  animation-delay: .4s;
+}
+
+.n4 img{
+  animation-delay: .6s;
+}
+
+.n5 img{
+  animation-delay: .8s;
+}
+
+.n6 img{
+  animation-delay: 1s;
+}
 
 
+
+@keyframes border {
+  from {
+      border-radius: 100%;
+      opacity: 0
+  }
+  to {
+      border-radius: 10px;
+      opacity: 100%; 
+  }
+}
+}
 
